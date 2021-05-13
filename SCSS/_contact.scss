@@ -1,0 +1,59 @@
+.contact {
+    font-family: 'Poppins', sans-serif;
+    background: $white-pallete;
+
+    .title-contact {
+        @include flexCenter(column);
+        padding: 1em;
+
+        .left {
+            z-index:700;
+            width: 70%;
+            border: 1px solid;
+            background: $black-pallete;
+            padding: 1em 1.2em;
+
+            span {
+                color: $red-pallete;
+            }
+            h1 {
+                font-size: 2rem;
+                color: $white-pure;
+                text-align: center;       
+            }
+            p {
+                @include paragraphContent(center);
+                color: $white-pure; 
+            }
+        }
+        .right {
+            width: 70%;
+
+            .menu-list {
+                @include flexCenter(row);
+                flex-wrap: wrap;
+                border: 3px solid $red-pallete;
+                background-color: $white-pure;
+
+                li {
+                    position: relative;
+                    list-style: none;
+                    margin: 1em;
+                    padding: 0.7em;
+                    cursor: pointer;
+                    border: 3px solid $red-pallete;
+                    border-radius: 50%;
+
+                    a {
+                        text-decoration: none;
+
+                        .fab, .fas {
+                            font-size: clamp(2rem, 2vw, 3rem);
+                            color: $black-pallete;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

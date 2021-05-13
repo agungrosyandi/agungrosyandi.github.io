@@ -1,0 +1,25 @@
+// color
+
+$white-pure: #fff;
+$black-pallete: #130B0B;
+$red-pallete: #a20a0a;
+$white-pallete: #f9f6f7;
+
+// font size
+
+$fontSize: (
+    "textHead": clamp(1rem, 2vw, 4rem),
+    "textSub": clamp(0.3rem, 2vw, 1.4rem), 
+    "paragraph": clamp(0.6rem, 1vw, 1.9rem)
+);
+
+// responsive media query
+
+$desktop: 1300px;
+$smalScreen: 1050px;
+$laptop: 900px;
+$tab: 800px;
+$mobile: 480px;
+
+
+

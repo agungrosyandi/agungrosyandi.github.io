@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+@import "reset";
+@import "variables";
+@import "config";
+@import "navbar";
+@import "home";
+@import "about";
+@import "skills";
+@import "contact";
+@import "footer";
+@import "mediaResponsive";
+
+:root {
+    --white-colour-pure: #fff;
+    --background-home-colour: #130B0B;
+    --red-primary-colour: #a20a0a;
+    --white-pallet-colour: #f9f6f7;
+}
+
+body {
+    font-size: 1rem;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+
