@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../SCSS/mixinTemplate.scss"
+    ],
+    "names": [],
+    "file": "mixinTemplate.css"
+}
