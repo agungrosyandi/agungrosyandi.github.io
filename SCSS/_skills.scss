@@ -1,0 +1,103 @@
+.skills {
+    font-family: 'Poppins', sans-serif;
+    background-color: $white-pallete;
+    
+    .skill-content {
+        padding: 1.3rem;
+        display: flex;
+        justify-content: center;
+
+        .left-and-right {
+            @include flexSpaceBetween(row);
+            background-color: $black-pallete;
+            padding: 1.8em;
+            width: 70%;
+
+            .left {
+                width: 50%;
+                padding-right: 1em;
+    
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 1.2rem;
+                    color: $white-pure;
+                    
+                    span {
+                        color: $red-pallete;
+                    }
+                }
+                p {
+                    display: block;
+                    @include paragraphContent(left);
+                    color: $white-pallete;          
+                }
+            }
+            .right {
+                width: 60%;
+                @include flexSpaceBetween(column);
+                background: $white-pallete;
+                border: 3px solid $red-pallete;
+                margin-right: -75px;
+                padding: 1em;
+                z-index: 99;
+    
+                .features-box {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+    
+                    img {
+                        width: 3rem;
+                        margin: 0.8em 1.3em 0.8em 0;
+                    }
+                    .content-features {
+                        width: 100%;
+            
+                        .text {
+                            margin: 0.4em;
+                            font-size: 0.7rem;
+                        }
+                        .line {
+                            border: 0px solid;
+                            border-radius: 20px;
+                            width: 100%;
+                            padding: 5px;
+                            margin-bottom: 1.3em;
+                            background: lightgray;
+                            position: relative;
+    
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                height: 100%;
+                                left: 0;
+                                top: 0;
+                                background: $red-pallete;
+                            }
+                        }
+                        .office, .teamwork {
+                            &::before {
+                                width: 80%;
+                            }
+                        }
+                        .wordpress, .speaking, .ilustrator {
+                            &::before {
+                                width: 60%;
+                            }            
+                        }
+                        .js, .react {
+                            &::before {
+                                width: 40%;
+                            }      
+                        }
+                        .css {
+                            &::before {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

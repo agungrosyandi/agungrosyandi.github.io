@@ -1,0 +1,14 @@
+footer {
+    font-family: 'Poppins', sans-serif;
+    margin: auto 0px;
+    background: $black-pallete;
+    color: $white-pure;
+    padding: 1.2rem;
+    
+    .footer-content {
+        @include flexCenter(column);
+        text-align: center;
+        width: 100%;
+        font-size: clamp(0.5rem, 3vw, 1rem);
+    }
+}
